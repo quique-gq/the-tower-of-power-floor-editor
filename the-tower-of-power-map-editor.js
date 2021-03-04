@@ -108,10 +108,8 @@ var THE_TOWER_OF_POWER_MAP_EDITOR = function () {
     document.body.insertAdjacentElement('afterbegin', canvas);
     console.log('the-tower-of-power ' + info.version);
     console.log('by ' + info.authors);
-    setTimeout(function () {
-      requestAnimationFrame(game.loop);
-      setInterval(function () { assets.audio.silence.play(); }, 1000 / 60);
-    }, 500);
+    requestAnimationFrame(game.loop);
+    setInterval(function () { assets.audio.silence.play(); }, 1000 / 60);
   };
 
   var playing = {};
