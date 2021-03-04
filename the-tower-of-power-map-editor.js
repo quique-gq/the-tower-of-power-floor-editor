@@ -1,4 +1,4 @@
-var THE_TOWER_OF_POWER_MAP_EDITOR = function () {
+var THE_TOWER_OF_POWER_FLOOR_EDITOR = function () {
   'use strict';
 
   var canvas = document.createElement('canvas');
@@ -250,7 +250,7 @@ var THE_TOWER_OF_POWER_MAP_EDITOR = function () {
       var btn = document.createElement('button');
       btn.style = 'padding: 10px; border: 1px solid #FFFFFF; border-radius: 3px; background: #000000; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); outline: none; font-family: "Courier New"; font-size: 3vw; color: #FFFFFF';
       btn.innerHTML = 'Click to begin';
-      btn.onclick = function () { THE_TOWER_OF_POWER_MAP_EDITOR().init(); btn.remove(); };
+      btn.onclick = function () { THE_TOWER_OF_POWER_FLOOR_EDITOR().init(); btn.remove(); };
       initCSS();
       document.body.appendChild(btn);
     }
